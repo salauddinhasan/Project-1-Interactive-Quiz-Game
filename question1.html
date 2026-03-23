@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div id="quiz-container" class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center relative overflow-hidden pb-10">
+        
+        <h1 id="question-text" class="text-2xl font-bold text-blue-600 mb-4">
+            Loading Question...
+        </h1>
+
+        <div class="flex justify-between items-center mb-6 text-gray-600 font-medium">
+            <p>Question <span id="current-num">1</span> of <span id="total-num">5</span></p>
+            <p>Score: <span id="score-val">0</span></p>
+        </div>
+        
+        <div id="answer-buttons" class="grid grid-cols-1 gap-3">
+            </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-gray-200">
+            <div id="progress-bar" class="h-full bg-blue-500 transition-all duration-500" style="width: 0%"></div>
+        </div>
+
+    </div>
+
+ 
+</body>
+</html>
